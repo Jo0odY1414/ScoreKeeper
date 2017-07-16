@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundApp"
+    android:background="@drawable/backgroundapp"
     tools:context="com.example.android.scorekeeper.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
         android:layout_above="@+id/reset"
+        android:layout_marginBottom="45dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:paddingBottom="24dp"
+                android:paddingBottom="14dp"
                 android:text="points"
                 android:textAllCaps="true"
                 android:textColor="#1f8c3f"
@@ -57,11 +57,21 @@
                 style="@style/Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:onClick="addOnePonitForTeamA"
                 android:text="+1 Point" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:onClick="removeOnePonitFromTeamA"
+                android:text="-1 ponit \'Offside\'" />
 
             <TextView
                 android:id="@+id/team_a_fouls"
@@ -78,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:paddingBottom="24dp"
+                android:paddingBottom="14dp"
                 android:text="fouls"
                 android:textAllCaps="true"
                 android:textColor="#9b2c26"
@@ -88,9 +98,9 @@
                 style="@style/Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:onClick="addOneFoulForTeamA"
                 android:text="+1 Foul" />
         </LinearLayout>
@@ -135,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:paddingBottom="24dp"
+                android:paddingBottom="14dp"
                 android:text="points"
                 android:textAllCaps="true"
                 android:textColor="#1f8c3f"
@@ -145,11 +155,21 @@
                 style="@style/Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:onClick="addOnePonitForTeamB"
                 android:text="+1 Point" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:onClick="removeOnePonitFromTeamB"
+                android:text="-1 ponit \'Offside\'" />
 
             <TextView
                 android:id="@+id/team_b_fouls"
@@ -166,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:paddingBottom="24dp"
+                android:paddingBottom="14dp"
                 android:text="fouls"
                 android:textAllCaps="true"
                 android:textColor="#9b2c26"
@@ -176,9 +196,9 @@
                 style="@style/Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:onClick="addOneFoulForTeamB"
                 android:text="+1 Foul" />
 

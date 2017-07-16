@@ -35,15 +35,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Decrease the ponits for Team A by 1 point.
+     */
+    public void removeOnePonitFromTeamA(View v) {
+        if (ponitsTeamA > 0)
+            ponitsTeamA -= 1;
+        displayPonitsForTeamA(ponitsTeamA);
+    }
+
+    /**
      * Displays the given Ponits for Team A.
      */
     public void displayPonitsForTeamA(int ponitsOfTeamA) {
         TextView ponitView = (TextView) findViewById(R.id.team_a_ponits);
         ponitView.setText(String.valueOf(ponitsOfTeamA));
-        if(ponitsOfTeamA > 0)
-            ponitView.setTextColor(Color.rgb(31,140,63));
+        if (ponitsOfTeamA > 0)
+            ponitView.setTextColor(Color.rgb(31, 140, 63));
         else
-            ponitView.setTextColor(Color.rgb(0,0,0));
+            ponitView.setTextColor(Color.rgb(0, 0, 0));
     }
 
     /**
@@ -60,10 +69,10 @@ public class MainActivity extends AppCompatActivity {
     public void displayFoulsForTeamA(int foulsOfTeamA) {
         TextView foulView = (TextView) findViewById(R.id.team_a_fouls);
         foulView.setText(String.valueOf(foulsOfTeamA));
-        if(foulsOfTeamA > 0)
-            foulView.setTextColor(Color.rgb(155,44,38));
+        if (foulsOfTeamA > 0)
+            foulView.setTextColor(Color.rgb(155, 44, 38));
         else
-            foulView.setTextColor(Color.rgb(0,0,0));
+            foulView.setTextColor(Color.rgb(0, 0, 0));
     }
 
     /**
@@ -75,15 +84,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Decrease the ponits for Team B by 1 point.
+     */
+    public void removeOnePonitFromTeamB(View v) {
+        if (ponitsTeamB > 0)
+            ponitsTeamB -= 1;
+        displayPonitsForTeamB(ponitsTeamB);
+    }
+
+    /**
      * Displays the given Ponits for Team B.
      */
     public void displayPonitsForTeamB(int ponitsOfTeamB) {
         TextView ponitView = (TextView) findViewById(R.id.team_b_ponits);
         ponitView.setText(String.valueOf(ponitsOfTeamB));
-        if(ponitsOfTeamB > 0)
-            ponitView.setTextColor(Color.rgb(31,140,63));
+        if (ponitsOfTeamB > 0)
+            ponitView.setTextColor(Color.rgb(31, 140, 63));
         else
-            ponitView.setTextColor(Color.rgb(0,0,0));
+            ponitView.setTextColor(Color.rgb(0, 0, 0));
     }
 
     /**
@@ -100,10 +118,10 @@ public class MainActivity extends AppCompatActivity {
     public void displayFoulsForTeamB(int foulsOfTeamB) {
         TextView foulView = (TextView) findViewById(R.id.team_b_fouls);
         foulView.setText(String.valueOf(foulsOfTeamB));
-        if(foulsOfTeamB > 0)
-            foulView.setTextColor(Color.rgb(155,44,38));
+        if (foulsOfTeamB > 0)
+            foulView.setTextColor(Color.rgb(155, 44, 38));
         else
-            foulView.setTextColor(Color.rgb(0,0,0));
+            foulView.setTextColor(Color.rgb(0, 0, 0));
 
     }
 
