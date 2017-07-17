@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public void removeOnePointFromTeamA(View v) {
         if (pointsTeamA > 0)
             pointsTeamA -= 1;
-        displayPointsForTeamA(pointsTeamA);
+        displayPointsForTeamA( pointsTeamA );
     }
 
     /**
