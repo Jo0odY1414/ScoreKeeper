@@ -1,21 +1,21 @@
 package com.example.android.scorekeeper;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Tracks the ponits for Team A
-    int ponitsTeamA = 0;
+    // Tracks the points for Team A
+    int pointsTeamA = 0;
 
     // Tracks the fouls for Team A
     int foulsTeamA = 0;
 
-    // Tracks the ponits for Team B
-    int ponitsTeamB = 0;
+    // Tracks the points for Team B
+    int pointsTeamB = 0;
 
     // Tracks the fouls for Team B
     int foulsTeamB = 0;
@@ -27,32 +27,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the ponits for Team A by 1 point.
+     * Increase the points for Team A by 1 point.
      */
-    public void addOnePonitForTeamA(View v) {
-        ponitsTeamA += 1;
-        displayPonitsForTeamA(ponitsTeamA);
+    public void addOnePointForTeamA(View v) {
+        pointsTeamA += 1;
+        displayPointsForTeamA(pointsTeamA);
     }
 
     /**
-     * Decrease the ponits for Team A by 1 point.
+     * Decrease the points for Team A by 1 point.
      */
-    public void removeOnePonitFromTeamA(View v) {
-        if (ponitsTeamA > 0)
-            ponitsTeamA -= 1;
-        displayPonitsForTeamA(ponitsTeamA);
+    public void removeOnePointFromTeamA(View v) {
+        if (pointsTeamA > 0)
+            pointsTeamA -= 1;
+        displayPointsForTeamA(pointsTeamA);
     }
 
     /**
-     * Displays the given Ponits for Team A.
+     * Displays the given points for Team A.
      */
-    public void displayPonitsForTeamA(int ponitsOfTeamA) {
-        TextView ponitView = (TextView) findViewById(R.id.team_a_ponits);
-        ponitView.setText(String.valueOf(ponitsOfTeamA));
-        if (ponitsOfTeamA > 0)
-            ponitView.setTextColor(Color.rgb(31, 140, 63));
+    public void displayPointsForTeamA(int pointsOfTeamA) {
+        TextView pointView = (TextView) findViewById(R.id.team_a_points);
+        pointView.setText(String.valueOf(pointsOfTeamA));
+        if (pointsOfTeamA > 0)
+            pointView.setTextColor(Color.rgb(31, 140, 63));
         else
-            ponitView.setTextColor(Color.rgb(0, 0, 0));
+            pointView.setTextColor(Color.rgb(0, 0, 0));
     }
 
     /**
@@ -76,32 +76,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the ponits for Team B by 1 point.
+     * Increase the points for Team B by 1 point.
      */
-    public void addOnePonitForTeamB(View v) {
-        ponitsTeamB += 1;
-        displayPonitsForTeamB(ponitsTeamB);
+    public void addOnePointForTeamB(View v) {
+        pointsTeamB += 1;
+        displayPointsForTeamB(pointsTeamB);
     }
 
     /**
-     * Decrease the ponits for Team B by 1 point.
+     * Decrease the points for Team B by 1 point.
      */
-    public void removeOnePonitFromTeamB(View v) {
-        if (ponitsTeamB > 0)
-            ponitsTeamB -= 1;
-        displayPonitsForTeamB(ponitsTeamB);
+    public void removeOnePointFromTeamB(View v) {
+        if (pointsTeamB > 0)
+            pointsTeamB -= 1;
+        displayPointsForTeamB(pointsTeamB);
     }
 
     /**
-     * Displays the given Ponits for Team B.
+     * Displays the given points for Team B.
      */
-    public void displayPonitsForTeamB(int ponitsOfTeamB) {
-        TextView ponitView = (TextView) findViewById(R.id.team_b_ponits);
-        ponitView.setText(String.valueOf(ponitsOfTeamB));
-        if (ponitsOfTeamB > 0)
-            ponitView.setTextColor(Color.rgb(31, 140, 63));
+    public void displayPointsForTeamB(int pointsOfTeamB) {
+        TextView pointView = (TextView) findViewById(R.id.team_b_points);
+        pointView.setText(String.valueOf(pointsOfTeamB));
+        if (pointsOfTeamB > 0)
+            pointView.setTextColor(Color.rgb(31, 140, 63));
         else
-            ponitView.setTextColor(Color.rgb(0, 0, 0));
+            pointView.setTextColor(Color.rgb(0, 0, 0));
     }
 
     /**
@@ -126,16 +126,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Reset all ponits and fouls in both teams
+     * Reset all points and fouls in both teams
      */
     public void resetALL(View v) {
-        ponitsTeamA = 0;
-        ponitsTeamB = 0;
+        pointsTeamA = 0;
+        pointsTeamB = 0;
         foulsTeamA = 0;
         foulsTeamB = 0;
-        displayPonitsForTeamA(ponitsTeamA);
+        displayPointsForTeamA(pointsTeamA);
         displayFoulsForTeamA(foulsTeamA);
-        displayPonitsForTeamB(ponitsTeamB);
+        displayPointsForTeamB(pointsTeamB);
         displayFoulsForTeamB(foulsTeamB);
     }
 }

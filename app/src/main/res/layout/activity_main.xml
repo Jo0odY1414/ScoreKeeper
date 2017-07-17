@@ -20,7 +20,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
@@ -34,7 +33,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/team_a_ponits"
+                android:id="@+id/team_a_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -61,7 +60,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:onClick="addOnePonitForTeamA"
+                android:onClick="addOnePointForTeamA"
                 android:text="+1 Point" />
 
             <Button
@@ -71,8 +70,8 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:onClick="removeOnePonitFromTeamA"
-                android:text="-1 ponit \'Offside\'" />
+                android:onClick="removeOnePointFromTeamA"
+                android:text="-1 point \'Offside\'" />
 
             <TextView
                 android:id="@+id/team_a_fouls"
@@ -132,7 +131,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/team_b_ponits"
+                android:id="@+id/team_b_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -160,7 +159,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:onClick="addOnePonitForTeamB"
+                android:onClick="addOnePointForTeamB"
                 android:text="+1 Point" />
 
             <Button
@@ -170,8 +169,8 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:onClick="removeOnePonitFromTeamB"
-                android:text="-1 ponit \'Offside\'" />
+                android:onClick="removeOnePointFromTeamB"
+                android:text="-1 point \'Offside\'" />
 
             <TextView
                 android:id="@+id/team_b_fouls"
